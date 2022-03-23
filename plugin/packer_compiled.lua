@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "git@github.com:akinsho/bufferline.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "git@github.com:glepnir/dashboard-nvim"
+  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/dracula.nvim",
@@ -109,10 +114,25 @@ _G.packer_plugins = {
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "git@github.com:shaunsingh/nord.nvim"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "git@github.com:williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "git@github.com:neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "git@github.com:kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "git@github.com:nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -138,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "git@github.com:nvim-lua/plenary.nvim"
+  },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "git@github.com:ahmedkhalf/project.nvim"
   },
   ["telescope-env.nvim"] = {
     loaded = true,
