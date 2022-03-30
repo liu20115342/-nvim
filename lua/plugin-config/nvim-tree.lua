@@ -12,7 +12,9 @@ nvim_tree.setup({
   auto_close = true,
   -- 不显示 git 状态图标
   git = {
-    enable = false,
+    enable = true,
+    ignore = true,
+    timeout = 500
   },
   -- project plugin 需要这样设置
   update_cwd = true,
@@ -50,4 +52,41 @@ nvim_tree.setup({
   system_open = {
     cmd = "wsl-open",
   },
+  diagnostics = {
+  -- 是否启用文件诊断信息
+    enable = true,
+    icons = {
+        hint = "",
+        info = "",
+        warning = "",
+        error = ""
+    }
+  },
 })
+
+vim.g.nvim_tree_icons = {
+    default = " ",
+    symlink = " ",
+    git = {
+        unstaged = "",
+        staged = "✓",
+        unmerged = "",
+        renamed = "➜",
+        untracked = "",
+        deleted = "",
+        ignored = ""
+    },
+    folder = {
+        -- arrow_open = "╰─▸",
+        -- arrow_closed = "├─▸",
+        arrow_open = "",
+        arrow_closed = "",
+        default = "",
+        open = "",
+        empty = "",
+        empty_open = "",
+        symlink = "",
+        symlink_open = ""
+    }
+}
+

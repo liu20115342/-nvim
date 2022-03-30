@@ -74,6 +74,31 @@ _G.packer_plugins = {
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "git@github.com:akinsho/bufferline.nvim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "git@github.com:hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "git@github.com:hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "git@github.com:hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "git@github.com:hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "git@github.com:hrsh7th/cmp-vsnip"
+  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
@@ -83,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "git@github.com:Mofiqul/dracula.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "git@github.com:rafamadriz/friendly-snippets"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
@@ -113,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "git@github.com:shaunsingh/nord.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "git@github.com:hrsh7th/nvim-cmp"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -183,6 +218,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oker/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "git@github.com:moll/vim-bbye"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "git@github.com:hrsh7th/vim-vsnip"
+  },
+  vimcdoc = {
+    loaded = true,
+    path = "/Users/oker/.local/share/nvim/site/pack/packer/start/vimcdoc",
+    url = "git@github.com:yianwillis/vimcdoc"
   }
 }
 
