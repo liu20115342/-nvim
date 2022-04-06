@@ -12,6 +12,12 @@ require("plugin-config.dashboard")
 require("plugin-config.project")
 require("plugin-config.nvim-treesitter")
 require("plugin-config.toggleterm")
+require("plugin-config.indent-blankline")
 -- lsp
 require('lsp.setup')
 require('lsp.cmp')
+require('lsp.ui');
+
+vim.cmd([[
+autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+]])

@@ -45,7 +45,6 @@ packer.startup({
     use("hrsh7th/nvim-cmp")
     -- snippet 引擎
     use("hrsh7th/vim-vsnip")
-    use("rafamadriz/friendly-snippets")
     -- 补全源
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
@@ -55,6 +54,10 @@ packer.startup({
 
     -- 常见编程语言代码段
     use("rafamadriz/friendly-snippets")
+    use("akinsho/toggleterm.nvim")
+    use("onsails/lspkind-nvim")
+    use("lukas-reineke/indent-blankline.nvim")
+    use("tami5/lspsaga.nvim" )
   end,
   config = {
     max_jobs = 16,
