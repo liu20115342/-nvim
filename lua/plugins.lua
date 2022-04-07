@@ -58,6 +58,7 @@ packer.startup({
     use("onsails/lspkind-nvim")
     use("lukas-reineke/indent-blankline.nvim")
     use("tami5/lspsaga.nvim" )
+    use("b0o/schemastore.nvim")
   end,
   config = {
     max_jobs = 16,

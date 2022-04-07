@@ -4,7 +4,14 @@ local lsp_installer = require "nvim-lsp-installer"
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 -- { key: 语言 value: 配置文件 }
 local servers = {
-  sumneko_lua = require "lsp.config.lua",
+  sumneko_lua = require("lsp.config.lua"),
+  jsonls = require("lsp.config.json"),
+  tsserver = require("lsp.config.ts"),
+  html = {},
+  golangci_lint_ls = require("lsp.config.golang"),
+  emmet_ls = require("lsp.config.emmet"),
+  cssls = require("lsp.config.css"),
+  volar = require("lsp.config.vue"),
 }
 
 -- 自动安装 LanguageServers

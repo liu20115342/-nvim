@@ -1,3 +1,5 @@
+
+require("utils.global")
 require('basic')
 require('keybindings')
 require('plugins')
@@ -17,6 +19,7 @@ require("plugin-config.indent-blankline")
 require('lsp.setup')
 require('lsp.cmp')
 require('lsp.ui');
+
 
 vim.cmd([[
 autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
