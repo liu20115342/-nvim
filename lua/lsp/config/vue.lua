@@ -28,7 +28,7 @@ local opts = {
       end
       -- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
       -- 绑定快捷键
-      keybindings.mapLSP(buf_set_keymap)
+      -- keybindings.mapLSP(buf_set_keymap)
     end
 }
 

@@ -1,12 +1,10 @@
-local keybindings = requirePlugin("keybindings")
-if not keybindings then
-  return
-end
-
+local keybindings = require("keybindings")
+local ts_utils = require("nvim-lsp-ts-utils")
 local opts = {
   flags = {
     debounce_text_changes = 150,
   },
+  capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
   on_attach = function(client, bufnr)
     -- 禁用格式化功能，交给专门插件插件处理
     client.resolved_capabilities.document_formatting = false
@@ -14,11 +12,9 @@ local opts = {
     local function buf_set_keymap(...)
       vim.api.nvim_buf_set_keymap(bufnr, ...)
     end
-    -- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
     -- 绑定快捷键
     keybindings.mapLSP(buf_set_keymap)
-
-    local ts_utils = require("nvim-lsp-ts-utils")
+    -- TypeScript 增强
     ts_utils.setup({
       debug = false,
       disable_commands = false,
@@ -34,6 +30,8 @@ local opts = {
       },
       import_all_scan_buffers = 100,
       import_all_select_source = false,
+      -- if false will avoid organizing imports
+      always_organize_imports = true,
       -- filter diagnostics
       filter_out_diagnostics_by_severity = {},
       filter_out_diagnostics_by_code = {},
@@ -47,13 +45,13 @@ local opts = {
     })
     -- required to fix code action ranges and filter diagnostics
     ts_utils.setup_client(client)
-    -- no default maps, so you may want to define some here
+    -- 绑定增强插件快捷键
     keybindings.mapTsLSP(buf_set_keymap)
   end,
 }
 
 return {
-  on_ready = function(server)
+  on_setup = function(server)
     server:setup(opts)
   end,
 }
